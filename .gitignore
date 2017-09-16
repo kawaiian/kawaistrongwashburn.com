@@ -25,3 +25,8 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# There is no reason a compressed file should be in here right now
+*.zip
+*.tar.gz
+*.tar
