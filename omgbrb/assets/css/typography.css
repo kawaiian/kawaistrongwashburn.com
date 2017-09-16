@@ -9,6 +9,24 @@
 * I have made alterations.
 */
 
+/* Webfonts (via myFont webfont kit )
+* Expects these fonts to be located in {web_root}/assets/webfonts */
+.DINNextSlabPro-Black { 
+	font-family: DINNextSlabPro-Black;
+	font-weight: normal;
+	font-style: normal;
+}
+.DINNextLTPro-Italic { 
+	font-family: DINNextLTPro-Italic;
+	font-weight: normal;
+	font-style: normal;
+}
+.DINNextLTPro-Regular { 
+	font-family: DINNextLTPro-Regular;
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* Base styles. Note we are mobile-first! */
 html {
     font-size: 62.5%;
