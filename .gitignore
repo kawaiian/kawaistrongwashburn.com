@@ -30,3 +30,12 @@ Temporary Items
 *.zip
 *.tar.gz
 *.tar
+
+# All the webfont stuff
+*/webfonts/
+*FontsWebfonts*
+*.eot
+*.woff
+*.woff2
+*.ttf
+
