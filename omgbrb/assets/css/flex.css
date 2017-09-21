@@ -1,0 +1,21 @@
+/*
+*   flex.css
+*   Sets layout for all elements using flexbox.
+*/
+
+.flex-container {
+    display: flex;
+    flex-flow: column nowrap; /* single-column, mobile-first */
+}
+
+.flex-container-child {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+@media all and (min-width: 800px) {
+    .flex-container {
+        flex-flow: row nowrap; /* on larger screens, shifts to multi-column. */
+    }
+}
