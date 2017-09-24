@@ -3,19 +3,26 @@
 *   Sets layout for all elements using flexbox.
 */
 
-.flex-container {
+.flex-parent {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
     flex-flow: column nowrap; /* single-column, mobile-first */
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
-.flex-container-child {
-    height: 300px;
-    width: 300px;
+.flex-child-standard {
+    flex: 1 0 auto;
     margin: auto;
+    text-align: center;
 }
 
-@media all and (min-width: 800px) {
-    .flex-container {
-        flex-flow: row nowrap; /* on larger screens, shifts to multi-column. */
-    }
+.flex-child-standard.banner {
+    flex: 10 0 auto;
 }
+
