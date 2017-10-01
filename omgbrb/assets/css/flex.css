@@ -3,7 +3,7 @@
 *   Sets layout for all elements using flexbox.
 */
 
-.flex-parent {
+.flex-container {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -11,18 +11,14 @@
     display: -webkit-flex;
 
     flex-flow: column nowrap; /* single-column, mobile-first */
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 100%;
 }
 
-.flex-child-standard {
+.flex-row {
     flex: 1 0 auto;
     margin: auto;
     text-align: center;
 }
 
-.flex-child-standard.banner {
-    flex: 10 0 auto;
-}
 
