@@ -39,3 +39,7 @@ Temporary Items
 *.woff2
 *.ttf
 
+# Images
+*.png
+*.jpg
+*.gif
