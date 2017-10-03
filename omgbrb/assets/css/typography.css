@@ -9,34 +9,17 @@
 * I have made alterations.
 */
 
-/* Webfonts (via myFont webfont kit )
-* Expects a webfont kit located in {web_root}/assets/fonts/webfonts and a
-* webfont kit .css file located in {web_root}/assets/fonts */
-.DINNextSlabPro-Black { 
-	font-family: DINNextSlabPro-Black;
-	font-weight: normal;
-	font-style: normal;
-}
-.DINNextLTPro-Italic { 
-	font-family: DINNextLTPro-Italic;
-	font-weight: normal;
-	font-style: normal;
-}
-.DINNextLTPro-Regular { 
-	font-family: DINNextLTPro-Regular;
-	font-weight: normal;
-	font-style: normal;
-}
-
 /* Base styles. Note we are mobile-first! */
 html {
     font-size: 62.5%;
-    background: #cc0066;
+    background: #f1f1ef;
+    height: 100%;
 }
 body {
     font-size: 1.5em;
     line-height: 1.6;
-    color: #f0f0f0; 
+    color: #000;
+    height: 100%; 
 }
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
@@ -45,22 +28,29 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
 
-/* Note the webfont names are used here */
-h1 { font-family: DINNextSlabPro-Black; font-size: 4.0rem; line-height: 1.2; letter-spacing: 0.2rem;}
-h2 { font-family: DINNextLTPro-Italic; font-size: 3.6rem; line-height: 1.25; }
-h3 { font-family: DINNextLTPro-Italic; font-size: 3.0rem; line-height: 1.3; }
-h4 { font-family: DINNextLTPro-Italic; font-size: 2.4rem; line-height: 1.35; }
-h5 { font-family: DINNextLTPro-Italic; font-size: 1.8rem; line-height: 1.5; }
-h6 { font-family: DINNextLTPro-Italic; font-size: 1.5rem; line-height: 1.6; }
+h1 { font-family: NeueHaasUnicaPro-Black;
+     font-size: 4.0rem;
+     line-height: 1.2;
+     letter-spacing: 0.1rem;
+     background: url(../img/text_background.jpg) no-repeat;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+}
+h2 { font-family: NeueHaasUnicaPro-UltraLight; font-size: 3.6rem; line-height: 1.25; }
+h3 { font-family: NeueHaasUnicaPro-UltraLight; font-size: 3.0rem; line-height: 1.3; }
+h4 { font-family: NeueHaasUnicaPro-Black; font-size: 2.4rem; line-height: 1.35; }
+h5 { font-family: NeueHaasUnicaPro-UltraLight; font-size: 1.8rem; line-height: 1.5; }
+h6 { font-family: NeueHaasUnicaPro-UltraLight; font-size: 1.5rem; line-height: 1.6; }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-    h1 { font-size: 5.0rem; }
-    h2 { font-size: 4.2rem; }
-    h3 { font-size: 3.6rem; }
-    h4 { font-size: 3.0rem; }
-    h5 { font-size: 2.4rem; }
-    h6 { font-size: 1.5rem; }
+    h1 { font-size: 5.0rem; } /* originally: 5.0 */
+    h2 { font-size: 4.2rem; } /* originally: 4.2 */
+    h3 { font-size: 3.6rem; } /* originally: 3.6 */
+    h4 { font-size: 3.0rem; } /* originally: 3.0 */
+    h5 { font-size: 2.4rem; } /* originally: 2.4 */
+    h6 { font-size: 1.5rem; } /* originally: 1.5 */
 }
 
 p {
